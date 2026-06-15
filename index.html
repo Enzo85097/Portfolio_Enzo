@@ -1,104 +1,302 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Étudiant BTS CIEL</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enzo Lopez-Toscano — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <div class="top-left-info text-start">
-        <h1 class="display-3 fw-bold mb-3">Bienvenue sur mon Portfolio</h1>
-        <h2 class="h3 mb-4">Étudiant en BTS CIEL</h2>
-        <p class="lead description-text">
-            Passionné par l'informatique, les réseaux et la cybersécurité. 
-            Actuellement en formation à l'UFA La Salle Saint-Denis, je continue à me spécialiser afin de pouvoir poursuivre sur une licence professionnelle ou une prépa ATS.
-        </p>
-        <button type="button" class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalPresentation">
-            <i class="fa-solid fa-user"></i> En savoir plus sur moi
-        </button>
+ 
+<!-- NAVIGATION -->
+<nav>
+  <a class="nav-logo" href="index.html">Enzo<span>.</span></a>
+  <ul>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+ 
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Disponible · BTS CIEL IR
     </div>
-
-    <a href="projects.html" class="btn btn-light btn-lg btn-projet"> Voir mes projets </a>
-    <a href="mailto:enzo.lopez-toscano@outlook.fr" class="btn btn-light btn-lg btn-email">
-        Contact
-    </a>
-
-    <div class="bottom-right-container">
-        <h3 class="mb-3">Mes Compétences</h3>
-        <div class="icons-list">
-            <div class="icon-item cursor-default"><i class="fa-brands fa-html5 fa-4x" style="color: #E34F26;"></i><span>HTML5</span></div>
-            <div class="icon-item cursor-default"><i class="fa-brands fa-css3-alt fa-4x" style="color: #264de4;"></i><span>CSS3</span></div>
-            <div class="icon-item cursor-default"><i class="fa-brands fa-php fa-4x" style="color: #777BB4;"></i><span>PHP</span></div>
-            <div class="icon-item cursor-default"><i class="fa-solid fa-database fa-4x text-white"></i><span>SQL</span></div>
-            <div class="icon-item cursor-default"><i class="fa-brands fa-github fa-4x text-white"></i><span>GitHub</span></div>
-            <div class="icon-item cursor-default"><i class="fa-brands fa-linux fa-4x text-white"></i><span>Linux</span></div>
-            <div class="icon-item cursor-default"><img src="mamp.png" alt="MAMP"><span>MAMP</span></div>
-        </div>
+    <h1>Enzo Lopez-Toscano<br /><span>Étudiant en Cybersécurité &amp; Réseaux</span></h1>
+    <p class="hero-desc">
+      Passionné par l'informatique, les réseaux et les systèmes embarqués.
+      En formation à l'UFA La Salle Saint-Denis, je vise une licence professionnelle ou une prépa ATS.
+    </p>
+    <div class="hero-cta">
+      <a href="projects.html" class="btn btn-primary">Voir mes projets →</a>
+      <a href="cv.pdf" class="btn btn-secondary" download>Télécharger le CV</a>
     </div>
-
-    <div class="bottom-left-container">
-        <h3 class="mb-3">Réseaux</h3>
-        <a href="https://www.linkedin.com/in/enzo-lopez-toscano-53b94a39a/" target="_blank" rel="noopener noreferrer" class="icon-item link-item">
-            <i class="fa-brands fa-linkedin fa-4x text-white"></i>
-            <span>LinkedIn</span>
-        </a>
+  </div>
+</section>
+ 
+<!-- À PROPOS -->
+<section id="about">
+  <div class="container">
+    <p class="section-label">À propos</p>
+    <h2 class="section-title">Qui suis-je ?</h2>
+    <p class="section-desc">
+      Étudiant en BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique),
+      spécialisation systèmes embarqués et réseaux (IR).
+    </p>
+ 
+    <div class="about-grid fade-in">
+      <div class="about-card">
+        <h4>Ce que je fais</h4>
+        <ul>
+          <li>Configurer des réseaux (Cisco, VLANs, Packet Tracer)</li>
+          <li>Développer des sites web dynamiques</li>
+          <li>Programmer en C++, Python, HTML/CSS/PHP</li>
+          <li>Concevoir des systèmes IoT embarqués</li>
+          <li>Automatiser des tâches avec des scripts</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h4>Mes qualités</h4>
+        <ul>
+          <li>Curieux et autodidacte</li>
+          <li>Esprit d'équipe et collaboration</li>
+          <li>Rigoureux dans mes démarches</li>
+          <li>Motivé par les défis techniques</li>
+          <li>Capacité d'adaptation rapide</li>
+        </ul>
+      </div>
     </div>
-
-    <div class="modal fade" id="modalPresentation" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content custom-modal">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold text-dark fs-3">Qui suis-je ?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-dark">
-                    <h4 class="mb-3 text-primary">👋 Bonjour, je m'appelle Enzo</h4>
-                    <p>
-                        Étudiant en <strong>BTS CIEL (Cybersécurité, Informatique et réseaux, Électronique)</strong>, 
-                        je suis quelqu'un qui aime bien le codage le réseaux et les ordinateurs.
-                    </p>
-                    
-                    <hr class="my-4">
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6 class="fw-bold"><i class="fa-solid fa-microchip"></i> Ce que j'aime faire</h6>
-                            <ul class="list-unstyled">
-                                <li>✔️ Configurer des réseaux (Cisco, Switchs)</li>
-                                <li>✔️ Créer des sites web dynamiques</li>
-                                <li>✔️ Coder (HTML, C++, Python, etc.)</li>
-                                <li>✔️ Automatiser des tâches avec des scripts</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="fw-bold"><i class="fa-solid fa-heart"></i> Mes qualités</h6>
-                            <ul class="list-unstyled">
-                                <li>✨ Curieux & Autodidacte</li>
-                                <li>🤝 Esprit d'équipe</li>
-                                <li>🔍 Rigoureux</li>
-                                <li>🚀 Motivé par les défis</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="alert alert-light mt-3 border" role="alert">
-                        🎯 <strong>Mon objectif :</strong> Devenir ingénieur en administration réseau et cybersécurité ou freelance, afin d'être capable de concevoir et protéger les infrastructures de demain ou de pouvoir me lancer à mon compte.
-                    </div>
-                </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                    <a href="cv.pdf" target="_blank" class="btn btn-primary">
-                      <i class="fa-solid fa-file-pdf"></i> Télécharger mon CV
-                    </a>
-                </div>
+ 
+    <div class="objective-box fade-in">
+      <strong>Objectif :</strong> Devenir ingénieur en administration réseau et cybersécurité —
+      concevoir et protéger les infrastructures de demain, ou me lancer en freelance.
+    </div>
+  </div>
+</section>
+ 
+<!-- COMPÉTENCES -->
+<div class="competences-bg">
+  <section id="competences">
+    <div class="container">
+      <p class="section-label">Compétences</p>
+      <h2 class="section-title">Stack technique</h2>
+      <p class="section-desc">Niveaux estimés d'après mes projets scolaires et personnels.</p>
+ 
+      <div class="skills-grid fade-in">
+        <div class="skill-category">
+          <h4>Développement</h4>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">HTML / CSS</span>
+              <span class="skill-level">Avancé</span>
             </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          </div>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">PHP</span>
+              <span class="skill-level">Intermédiaire</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </div>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Python</span>
+              <span class="skill-level">Intermédiaire</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          </div>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">C++ (Arduino / ESP32)</span>
+              <span class="skill-level">Intermédiaire</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </div>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">SQL</span>
+              <span class="skill-level">Intermédiaire</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="55"></div></div>
+          </div>
         </div>
+ 
+        <div class="skill-category">
+          <h4>Réseaux &amp; Systèmes</h4>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Linux</span>
+              <span class="skill-level">Intermédiaire</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+          </div>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Cisco / Packet Tracer</span>
+              <span class="skill-level">Intermédiaire</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </div>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">MQTT / IoT</span>
+              <span class="skill-level">Pratique</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="50"></div></div>
+          </div>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">GitHub</span>
+              <span class="skill-level">Courant</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          </div>
+ 
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Docker / MariaDB</span>
+              <span class="skill-level">Notions</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="35"></div></div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </section>
+</div>
+ 
+<!-- PROJETS -->
+<section id="projets">
+  <div class="container">
+    <p class="section-label">Projets</p>
+    <h2 class="section-title">Ce que j'ai réalisé</h2>
+    <p class="section-desc">Projets scolaires et personnels — du réseau à l'IoT.</p>
+ 
+    <div class="projects-grid">
+ 
+      <!-- Smart Trash -->
+      <div class="project-card featured fade-in">
+        <span class="project-featured-badge">★ Projet BTS — Défense orale 2026</span>
+        <h3>Smart Trash — Poubelle connectée IoT</h3>
+        <p>
+          Système IoT complet : une poubelle intelligente qui mesure son remplissage, son poids
+          et la température ambiante en temps réel. Les données transitent via MQTT jusqu'à une
+          base MariaDB, avec affichage sur dashboard.
+        </p>
+ 
+        <div class="smart-trash-stats">
+          <div class="stat-box">
+            <span class="stat-value">ESP32</span>
+            <span class="stat-label">Firmware C++</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value">RPi 4</span>
+            <span class="stat-label">Passerelle MQTT</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value">~640 €</span>
+            <span class="stat-label">Budget projet</span>
+          </div>
+        </div>
+ 
+        <p>
+          <strong>Mes contributions :</strong> firmware ESP32 (C++), configuration point d'accès WiFi
+          Raspberry Pi, script Python passerelle MQTT, câblage capteurs HC-SR04 / DHT22 / HX711.
+        </p>
+ 
+        <div class="project-tags">
+          <span class="tag">ESP32</span>
+          <span class="tag">C++</span>
+          <span class="tag">Python</span>
+          <span class="tag">MQTT</span>
+          <span class="tag">Raspberry Pi 4</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag">Docker</span>
+          <span class="tag">IoT</span>
+        </div>
+      </div>
+ 
+      <!-- Réseau Cisco -->
+      <div class="project-card fade-in">
+        <h3>Configuration réseau d'entreprise</h3>
+        <p>
+          Simulation et mise en place d'un réseau d'entreprise complet sous Cisco Packet Tracer :
+          routage inter-VLAN, switching, configuration des services DHCP, DNS et Web.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Cisco</span>
+          <span class="tag">Packet Tracer</span>
+          <span class="tag">VLAN</span>
+          <span class="tag">DHCP</span>
+          <span class="tag">DNS</span>
+        </div>
+      </div>
+ 
+      <!-- Premier site -->
+      <div class="project-card fade-in">
+        <h3>Site vitrine HTML / CSS</h3>
+        <p>
+          Création d'un site vitrine responsive en HTML5 et CSS3 pur. Premier projet web —
+          mise en pratique des bases du développement front-end.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Responsive</span>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <div style="margin-top: 1.5rem; text-align: center;">
+      <a href="projects.html" class="btn btn-secondary">Voir tous les projets →</a>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section id="contact" style="padding-top: 0;">
+  <div class="container">
+    <div class="contact-box fade-in">
+      <h3>Travaillons ensemble</h3>
+      <p>Stage, alternance ou projet — n'hésitez pas à me contacter.</p>
+      <div class="contact-links">
+        <a href="mailto:enzo.lopez-toscano@outlook.fr" class="contact-btn contact-btn-primary">
+          Envoyer un email
+        </a>
+        <a href="https://www.linkedin.com/in/enzo-lopez-toscano-53b94a39a/" target="_blank" rel="noopener" class="contact-btn contact-btn-secondary">
+          LinkedIn
+        </a>
+        <a href="cv.pdf" class="contact-btn contact-btn-secondary" download>
+          Télécharger le CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <p>© 2026 Enzo Lopez-Toscano · UFA La Salle Saint-Denis</p>
+</footer>
+ 
+<script src="js/main.js"></script>
 </body>
 </html>
+ 
