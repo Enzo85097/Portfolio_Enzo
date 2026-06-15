@@ -1,46 +1,155 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets — Enzo Lopez-Toscano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<a href="folio.html" class="btn btn-light btn-lg btn-retour">
-    <i class="fa-solid fa-arrow-left"></i> Retour</a>
-
-<div class="container py-5">
-    <h1 class="text-center text-white fw-bold mb-5 display-4" style="text-shadow: 2px 2px 5px black;">Mes Projets</h1>
-
-    <div class="row g-4 justify-content-center">
-        <div class="col-md-5 col-lg-4">
-            <div class="card project-card h-100">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Mon Premier Site</h5>
-                    <p class="card-text">Création d'un site vitrine en HTML/CSS.</p>
-                    <span class="badge bg-primary">HTML</span>
-                    <span class="badge bg-secondary">CSS</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5 col-lg-4">
-            <div class="card project-card h-100">
-                <img src="image_3.png" class="card-img-top p-2" alt="Schéma du réseau Cisco Packet Tracer" style="border-radius: 15px;">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">Configuration Réseau</h5>
-                    <p class="card-text">Mise en place et simulation d'un réseau d'entreprise complet sous Packet Tracer, incluant le routage, le switching, et des services (DHCP, DNS, Web).</p>
-                    <span class="badge bg-success">Réseau</span>
-                    <span class="badge bg-info text-dark">Cisco</span>
-                    <span class="badge bg-warning text-dark">Packet Tracer</span>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
+<!-- NAVIGATION -->
+<nav>
+  <a class="nav-logo" href="index.html">Enzo<span>.</span></a>
+  <ul>
+    <li><a href="index.html#about">À propos</a></li>
+    <li><a href="index.html#competences">Compétences</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+ 
+<!-- EN-TÊTE DE PAGE -->
+<div class="page-header">
+  <div class="container">
+    <a class="back-link" href="index.html">← Retour à l'accueil</a>
+    <p class="section-label">Portfolio</p>
+    <h1>Mes Projets</h1>
+    <p>Du firmware embarqué aux réseaux d'entreprise — mes réalisations en BTS CIEL IR.</p>
+  </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+<!-- CONTENU PRINCIPAL -->
+<main>
+  <div class="container" style="padding-bottom: 80px;">
+ 
+    <!-- SMART TRASH — PROJET PHARE -->
+    <div class="project-card featured fade-in">
+      <span class="project-featured-badge">★ Projet BTS — Défense 2026</span>
+      <h2 style="font-size: 1.2rem; font-weight: 600; letter-spacing: -0.025em; margin-bottom: 0.5rem;">
+        Smart Trash — Poubelle connectée IoT
+      </h2>
+      <p class="desc">
+        Projet de fin de BTS réalisé en équipe sous la supervision de M. Ahmed Bachir Diedhiou.
+        Une poubelle intelligente qui surveille en temps réel son taux de remplissage, son poids
+        et la température ambiante. Les données remontent via WiFi + MQTT vers une Raspberry Pi
+        qui les stocke dans MariaDB (conteneurisé Docker).
+      </p>
+ 
+      <div class="smart-trash-stats">
+        <div class="stat-box">
+          <span class="stat-value">ESP32</span>
+          <span class="stat-label">Firmware C++</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value">RPi 4</span>
+          <span class="stat-label">Gateway MQTT</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value">~640 €</span>
+          <span class="stat-label">Budget total</span>
+        </div>
+      </div>
+ 
+      <p class="in-card-label">Mes contributions personnelles</p>
+      <div class="stack-list">
+        <div class="stack-item">Firmware ESP32 en C++ (capteurs + WiFi)</div>
+        <div class="stack-item">Script Python passerelle MQTT (passerelle_mqtt.py)</div>
+        <div class="stack-item">Config. point d'accès WiFi sur Raspberry Pi 4</div>
+        <div class="stack-item">Câblage HC-SR04, DHT22 et HX711</div>
+      </div>
+ 
+      <p class="in-card-label">Stack technique</p>
+      <div class="project-tags">
+        <span class="tag">ESP32</span>
+        <span class="tag">C++</span>
+        <span class="tag">Python</span>
+        <span class="tag">MQTT / Mosquitto</span>
+        <span class="tag">Raspberry Pi 4</span>
+        <span class="tag">WiFi</span>
+        <span class="tag">MariaDB</span>
+        <span class="tag">Docker</span>
+        <span class="tag">HC-SR04</span>
+        <span class="tag">DHT22</span>
+        <span class="tag">HX711</span>
+      </div>
+    </div>
+ 
+    <!-- RÉSEAU CISCO -->
+    <div class="project-card fade-in" style="margin-top: 1rem;">
+      <h2 style="font-size: 1.2rem; font-weight: 600; letter-spacing: -0.025em; margin-bottom: 0.5rem;">
+        Configuration réseau d'entreprise
+      </h2>
+      <p class="desc">
+        Simulation et déploiement d'une infrastructure réseau complète sous Cisco Packet Tracer.
+        Mise en place du routage inter-VLAN, switching L2/L3, et configuration des services
+        réseau essentiels : DHCP, DNS et serveur Web.
+      </p>
+ 
+      <div class="project-img">
+        <img src="image_3.png" alt="Schéma du réseau Cisco Packet Tracer" />
+      </div>
+ 
+      <p class="in-card-label">Ce que j'ai mis en place</p>
+      <div class="stack-list" style="background: transparent;">
+        <div class="stack-item">Routage inter-VLAN (router-on-a-stick)</div>
+        <div class="stack-item">Switching L2 avec Spanning Tree</div>
+        <div class="stack-item">Services DHCP et DNS</div>
+        <div class="stack-item">Serveur HTTP intégré</div>
+      </div>
+ 
+      <div class="project-tags" style="margin-top: 1rem;">
+        <span class="tag">Cisco</span>
+        <span class="tag">Packet Tracer</span>
+        <span class="tag">VLAN</span>
+        <span class="tag">DHCP</span>
+        <span class="tag">DNS</span>
+        <span class="tag">Routage</span>
+        <span class="tag">ACL</span>
+      </div>
+    </div>
+ 
+    <!-- PREMIER SITE -->
+    <div class="project-card fade-in" style="margin-top: 1rem;">
+      <h2 style="font-size: 1.2rem; font-weight: 600; letter-spacing: -0.025em; margin-bottom: 0.5rem;">
+        Site vitrine HTML / CSS
+      </h2>
+      <p class="desc">
+        Mon premier projet web — un site vitrine statique réalisé en HTML5 et CSS3 pur.
+        Mise en pratique de la sémantique HTML, du positionnement CSS et du design responsive
+        sans framework.
+      </p>
+      <div class="project-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Responsive</span>
+        <span class="tag">Front-end</span>
+      </div>
+    </div>
+ 
+    <div style="margin-top: 2rem; text-align: center;">
+      <a href="index.html#contact" class="btn btn-secondary">Me contacter →</a>
+    </div>
+ 
+  </div>
+</main>
+ 
+<footer>
+  <p>© 2026 Enzo Lopez-Toscano · UFA La Salle Saint-Denis</p>
+</footer>
+ 
+<script src="js/main.js"></script>
 </body>
 </html>
